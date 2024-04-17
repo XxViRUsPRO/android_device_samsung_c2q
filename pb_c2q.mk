@@ -9,8 +9,8 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
-# Inherit some common TWRP stuff.
-$(call inherit-product, vendor/twrp/config/common.mk)
+# Inherit some common stuff.
+$(call inherit-product, vendor/pb/config/common.mk)
 
 # Inherit from c2q device
 $(call inherit-product, device/samsung/c2q/device.mk)
@@ -22,7 +22,7 @@ PRODUCT_PACKAGES += \
     charger_res_images
 
 PRODUCT_DEVICE := c2q
-PRODUCT_NAME := twrp_c2q
+PRODUCT_NAME := pb_c2q
 PRODUCT_BRAND := samsung
 PRODUCT_MODEL := SM-N986N
 PRODUCT_MANUFACTURER := samsung
